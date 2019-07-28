@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="GB2312">
+  <title>欢迎来到苏州园林！</title>
+  <script src="jQuery/jquery-3.4.1.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="headerbg">
+  <div id="first"></div>
+  <div id="after"></div>
+  <div id="headerblank">
+    <div id="header">
+      <div id="menublank">
+        <div id="menu">
+          <ul>
+            <li><a href="#" class="menu">首页 </a></li>
+            <li><a href="#" class="menu">风景名胜</a></li>
+            <li><a href="#" class="menu">餐饮</a></li>
+            <li><a href="#" class="menu">娱乐设施</a></li>
+            <li><a href="#" class="menu">民宿</a></li>
+            <li><a href="#" class="menu">出游指南</a></li>
+            <li><a href="#" class="menu">网上预订</a></li>
+            <li><a href="#" class="menu">交通信息</a></li>
+          </ul>
+          <button id="biu">消失 出现</button>
+          <script>
+            $(document).ready(function () {
+              $("#biu").click(function () {
+                $("#demo").toggle("slow", function () {
+                })
+              })
+            })
+          </script>
+          <div id="demo">
+            <script>
+              let myVar = setInterval(function () {
+                myTimer()
+              }, 1000);
+
+              function myTimer() {
+                let nowTime = new Date();
+                let strNowTime = nowTime.toString();
+                let result = strNowTime.substring(15, strNowTime.length - 18);
+                let month = nowTime.getMonth();
+                let day = nowTime.getDay();
+                let strYear = nowTime.getFullYear();
+                let strDay, strMonth;
+                switch (day) {
+                  case 0:
+                    strDay = "星期天";
+                    break;
+                  case 1:
+                    strDay = "星期一";
+                    break;
+                  case 2:
+                    strDay = "星期二";
+                    break;
+                  case 3:
+                    strDay = "星期三";
+                    break;
+                  case 4:
+                    strDay = "星期四";
+                    break;
+                  case 5:
+                    strDay = "星期五";
+                    break;
+                  case 6:
+                    strDay = "星期六";
+                }
+
+                switch (month) {
+                  case 0:
+                    strMonth = "一月";
+                    break;
+                  case 1:
+                    strMonth = "二月";
+                    break;
+                  case 2:
+                    strMonth = "三月";
+                    break;
+                  case 3:
+                    strMonth = "四月";
+                    break;
+                  case 4:
+                    strMonth = "五月";
+                    break;
+                  case 5:
+                    strMonth = "六月";
+                    break;
+                  case 6:
+                    strMonth = "七月";
+                    break;
+                  case 7:
+                    strMonth = "八月";
+                    break;
+                  case 8:
+                    strMonth = "九月";
+                    break;
+                  case 9:
+                    strMonth = "十月";
+                    break;
+                  case 10:
+                    strMonth = "十一月";
+                    break;
+                  case 11:
+                    strMonth = "十二月";
+                    break;
+                }
+                document.getElementById("demo").innerHTML = "今天是 " + strYear + "年 " + strMonth + " " + strDay + result;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div id="headerrightblank">
+        <div id="headernav">
+          <ul>
+            <li><a href="#" class="register">注册</a></li>
+            <li><a href="#" class="login">登录</a></li>
+            <li><a href="#" class="bookmark">收藏</a></li>
+            <li><a href="#" class="blog">留言</a></li>
+          </ul>
+        </div>
+        <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
+        <div class="headertxt02"><span class="headerboldtxt"></span><span
+          class="headerdecoratxt">苏州园林，美不胜收</span></div>
+        <div id="projectblank">
+          <div id="project">
+            <div id="projectgallery">
+              <div id="project-pic"><a href="#" class="project-pic"></a></div>
+              <div id="project-pic02"><a href="#" class="project-pic02"></a></div>
+              <div id="project-pic03"><a href="#" class="project-pic03"></a></div>
+              <div id="project-pic04"><a href="#" class="project-pic04"></a></div>
+              <div id="project-pic05"><a href="#" class="project-pic05"></a></div>
+              <div id="project-pic06"><a href="#" class="project-pic06"></a></div>
+              <div id="project-pic07"><a href="#" class="project-pic07"></a></div>
+              <div id="project-pic08"><a href="#" class="project-pic08"></a></div>
+              <div id="project-pic09"><a href="#" class="project-pic09"></a></div>
+            </div>
+          </div>
+        </div>
+        <div id="paging">
+          <ul>
+            <li><a href="#" class="prev">风景前瞻</a></li>
+            <li><a href="#" class="num">1</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">2</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">3</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">4</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">5</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">6</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">7</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">8</a></li>
+            <li class="sap"></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="next">next</a></li>
+          </ul>
+        </div>
+        <div id="special"></div>
+        <div id="searchblank">
+          <div id="searchinput">
+            <form id="form1" name="form1" method="post" action="">
+              <label for="textfield">信息查询处</label>
+              <input name="textfield" type="text" class="searchinput" id="textfield" placeholder="输入关键字"/>
+            </form>
+          </div>
+          <div id="advancedsearch"><a href="#" class="advancedsearch">查询信息</a></div>
+          <div id="go"><a href="#" class="go">Go</a></div>
+        </div>
+      </div>
+      <div id="bannertxtblank">
+        <div id="bannerheading">
+          <h2>欢迎到苏州园林度假旅游</h2>
+        </div>
+        <div id="bannertxt">
+          <p>苏州园林是建筑、山水、花木、雕刻、书画的综合艺术品，集自然美和艺术美于一体，构成了曲折迂回、步移景换的画面。</p>
+          <p><span
+            class="bannertxt">苏州园林里的门和窗，图案设计和雕镂琢磨功夫都是工艺美术的上品。大致说来，那些门和窗尽量工细而决不庸俗，即使简朴而别具匠心。四扇，八扇，十二扇，综合起来看，谁都要赞叹这是高度的图案美。</span>
+          </p>
+        </div>
+        <div id="bannermore"><a href="#" class="bannermore">更多</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contentbg">
+  <div id="contentblank">
+    <div id="content">
+      <div id="contentleft">
+        <div id="newsheading">
+          <h3>景点新闻</h3>
+        </div>
+        <div id="newstxtbg">
+          <div id="newsboldtxt">2015年 5月</div>
+          <div class="newstxt">休闲一日套票268元/位。大于等三人，或者费用高于550，人数不少于两人的团队，能获得精美礼物，每人一份，并且票价九折。<br/>
+            <br/>
+          </div>
+          <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
+          <div id="newsboldtxt02">2015年 4月</div>
+          <div class="newstxt"><span class="boldtxt">清明假期开始，为期三天，指定景点门票限时半价，同时现场将有免费观光车带您游览景区。</span><br/>
+          </div>
+          <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
+          <div id="newsboldtxt03">2014年 10月</div>
+          <div class="newstxt"><span class="boldtxt">2014年9月指定时间段、指定地点，将有导游免费带队参观讲解。</span><br/>
+          </div>
+          <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
+        </div>
+      </div>
+      <div id="contentmid">
+        <div id="awardheading">
+          <h3>景点介绍<br/>
+          </h3>
+        </div>
+        <div id="awardtxtblank">
+          <div class="awardtxt">
+            <div class="awardboldtxt">沧浪亭</div>
+            <div class="awardnormaltxt">
+              沧浪亭主要景区以山林为核心，四周环列建筑，亭及依山起伏的长廊又利用园外的水画，通过复廊上的漏窗渗透作用，沟通园内、外的山、水，使水面、池岸、假山、亭榭融成一体。园中山上石径盘旋，古树葱茏，箬竹被覆，藤萝蔓挂，野卉丛生，朴素自然，景色苍润如真山野林。
+            </div>
+          </div>
+          <div class="awardtxt02">
+            <div class="awardboldtxt">拙政园</div>
+            <div class="awardnormaltxt">
+              拙政园的布局疏密自然，其特点是以水为主，水面广阔，景色平淡天真、疏朗自然。它以池水为中心，楼阁轩榭建在池的周围，其间有漏窗、回廊相连，园内的山石、古木、绿竹、花卉，构成了一幅幽远宁静的画面，代表了明代园林建筑风格。拙政园形成的湖、池、涧等不同的景区，把风景诗、山水画的意境和自然环境的实境再现于园中，富有诗情画意。
+            </div>
+          </div>
+          <div class="awardtxt03">
+            <div class="awardboldtxt">网师园</div>
+            <div class="awardnormaltxt">
+              网师园布局精巧，结构紧凑，以建筑精巧和空间尺度比例协调而著称。园分三部分，境界各异。东部为住宅，中部为主园。集中了春、夏、秋、冬四季景物及朝、午、夕、晚一日中的景色变化。所以游园时，宜坐、宜留、以静观为主。绕池一周，可前细数游鱼，可亭中待月迎风。
+            </div>
+          </div>
+          <div class="awardtxt04">
+            <div class="awardboldtxt">狮子林</div>
+            <div class="awardnormaltxt">
+              狮子林内的湖石假山多且精美，建筑分布错落有致，园中最高峰为“狮子峰”，另有“含晖”、“吐月”等名峰。园内多竹，竹间结茅的方丈禅窝，建有“冰壶进”、“玉鉴池”、“小飞虹（桥）”。狮子林主题明确，景深丰富，个性分明，假山洞壑奇巧、出神入化、匠心独具，一草一木别有风韵，园内长廊四面贯通，廊壁上嵌有书条石刻，皆为名家书法佳作。
+            </div>
+          </div>
+        </div>
+        <div class="morenewsbutton_s"><a href="#" class="morenews_s">more</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footerbg">
+  <div id="footerblank">
+    <div id="footer">
+      <div id="footerlinks"><a href="#" class="footerlinks">首页</a> |
+        <a href="#" class="footerlinks">景点介绍</a> |
+        <a href="#" class="footerlinks">门票价格</a> |
+        <a href="#" class="footerlinks">旅游指南</a> |
+        <a href="#" class="footerlinks">旅游线路</a> |
+        <a href="#" class="footerlinks">交通指南</a> |
+        <a href="#" class="footerlinks">联系我们</a>
+      </div>
+      <div id="copyrights">@Copyright 苏州园林 All Rights Reserved.</div>
+      <div id="copyrightss">此页面“景点新闻”及上方“copyright”内容为纯虚构，并且所有部分仅作学习用途。</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

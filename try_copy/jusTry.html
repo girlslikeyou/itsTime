@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=GB2312">
+  <title>无标题文档</title>
+  <style>
+    #div {
+      width: 150px;
+      height: 150px;
+      background: #000;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+<script>
+  var time;
+  var data;
+  window.onload = function () {
+    var div = document.getElementById('div');
+    div.onmousemove = function () {
+      data = 0.3;
+      move(1, 0.05);
+    };
+    div.onmouseout = function () {
+      data = 1;
+      move(0, -0.05);
+    };
+  };
+
+  function move(e, speed) {
+    var div = document.getElementById('div');
+    clearInterval(time);
+    time = setInterval(function () {
+      if (data == e) {
+        clearInterval(time);
+      } else {
+        div.style.opacity = data + speed;
+        data = data + speed;
+      }
+    }, 60);
+  };
+</script>
+<body>
+<div id="div">
+</div>
+</body>
+</html>

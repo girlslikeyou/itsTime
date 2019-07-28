@@ -93,7 +93,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 3e238e08a5e2663a0d73fee0de2a4eebb8b0d358
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1750" />
@@ -208,12 +212,20 @@
       <workItem from="1563767219840" duration="6013000" />
       <workItem from="1564022979664" duration="2119000" />
       <workItem from="1564123225674" duration="1796000" />
+<<<<<<< HEAD
       <workItem from="1564195946729" duration="1696000" />
+=======
+      <workItem from="1564195946729" duration="1086000" />
+>>>>>>> 3e238e08a5e2663a0d73fee0de2a4eebb8b0d358
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="183916000" />
+=======
+    <option name="totallyTimeSpent" value="183306000" />
+>>>>>>> 3e238e08a5e2663a0d73fee0de2a4eebb8b0d358
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -274,6 +286,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17955">
@@ -285,6 +298,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="131" column="78" selection-start-line="131" selection-start-column="78" selection-end-line="131" selection-end-column="78" />
+=======
+    <entry file="file://$PROJECT_DIR$/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="131" column="78" selection-start-line="131" selection-start-column="78" selection-end-line="131" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17955">
+          <caret line="945" selection-start-line="945" selection-end-line="945" />
+>>>>>>> 3e238e08a5e2663a0d73fee0de2a4eebb8b0d358
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffe5cd;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, span {
@@ -15,11 +16,12 @@ h1, h2, h3, h4, h5, h6, span {
   width: 100%;
   height: 740px;
   float: left;
-  margin: 0;
+  margin: -557px 0 0 -40px;
   padding: 0;
   background-image: url(images/picture01.jpeg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position:top;
+  opacity: 0.9;
 }
 
 #headerblank {
@@ -44,11 +46,13 @@ h1, h2, h3, h4, h5, h6, span {
   width: 300px;
   height: 557px;
   float: left;
-  margin: 0 0 0 1088px;
+  margin: 0 0 0 1240px;
   padding: 0;
   background-image: url(images/picture08_01.jpg);
   background-repeat: no-repeat;
   background-position: -300px 0;
+  position: relative;
+
 }
 
 #menublank {
@@ -57,6 +61,8 @@ h1, h2, h3, h4, h5, h6, span {
   float: left;
   margin: 0;
   padding: 0 0 0 69px;
+  position: center;
+  z-index: 1;
 }
 
 #menu {
@@ -65,6 +71,7 @@ h1, h2, h3, h4, h5, h6, span {
   float: left;
   margin: -550px 0 0 0;
   padding: 0;
+;
 }
 
 #menu ul {
@@ -85,30 +92,33 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 #menu ul li a.menu {
+  border-radius: 10px;
   height: 25px;
   float: left;
   margin: 0;
-  padding: 4px 21px 0 21px;
-  font-family: "Œ¢»Ì—≈∫⁄";
+  padding: 5px 21px 2px 21px;
+  font-family: "ø¨ÃÂ";
   font-size: 20px;
   font-weight: bold;
-  color: #ffb6c3;
+  color: #ff6232;
   text-align: center;
   text-decoration: none;
+  background-color: rgba(255,255,255,0.6);
 }
 
 #menu ul li a.menu:hover {
+  border-radius: 10px;
   height: 25px;
   float: left;
   margin: 0;
-  padding: 4px 21px 0 21px;
-  font-family: "Œ¢»Ì—≈∫⁄";
+  padding: 5px 21px 2px 21px;
+  font-family: "ø¨ÃÂ";
   font-size: 20px;
   font-weight: bold;
   color: #FFF;
   text-align: center;
   text-decoration: none;
-  background-image: url(images/menuover.jpg);
+  background-image: radial-gradient(circle at center,#ff7627,#ffe5cd);
   background-repeat: repeat-x;
 }
 
@@ -122,6 +132,7 @@ h1, h2, h3, h4, h5, h6, span {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  outline:none;
 }
 
 /*#biu:hover {
@@ -158,7 +169,7 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 #demo {
-  width: 280px;
+  width: 295px;
   height: 20px;
   padding: 0 0 0 15px;
   margin: 20px 0 0 0;
@@ -169,7 +180,7 @@ h1, h2, h3, h4, h5, h6, span {
 #headerrightblank {
   width: 311px;
   float: right;
-  margin: -550px 70px 0 0;
+  margin: -1100px 70px 0 0;
   padding: 0;
 }
 
@@ -177,8 +188,10 @@ h1, h2, h3, h4, h5, h6, span {
   width: 290px;
   height: 25px;
   float: right;
-  margin: 0;
+  margin: 555px 0 0 0;
   padding: 0 0 0 21px;
+  position: absolute;
+  z-index: 1;
 }
 
 #headernav ul {
@@ -198,124 +211,153 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 #headernav ul li a.register {
-  width: 67px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 17px;
-
-  font-size: 14px;
-  color: #FFFFFF;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: none;
   background-image: url(images/registericon.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
+  background-color: rgba(255,255,255,0.5);
 
 }
 
 #headernav ul li a.register:hover {
-  width: 67px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 17px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: underline;
   background-image: url(images/registericon.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
 }
 
 #headernav ul li a.login {
-  width: 41px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 20px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: none;
   background-image: url(images/login.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
+  background-color: rgba(255,255,255,0.5);
 }
 
 #headernav ul li a.login:hover {
-  width: 41px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 20px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: underline;
   background-image: url(images/login.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
 }
 
 #headernav ul li a.bookmark {
-  width: 62px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 21px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: none;
   background-image: url(images/bookmark.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
+  background-color: rgba(255,255,255,0.5);
 }
 
 #headernav ul li a.bookmark:hover {
-  width: 62px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 21px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 19px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: #e2fff3;
   text-decoration: underline;
   background-image: url(images/bookmark.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
 }
 
 #headernav ul li a.blog {
-  width: 35px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 19px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 12px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #e2fff3;
   text-decoration: none;
   background-image: url(images/blog.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
+  background-color: rgba(255,255,255,0.5);
 }
 
 #headernav ul li a.blog:hover {
-  width: 35px;
-  height: 15px;
+  border-radius: 10px;
+  width: 45px;
+  height: 20px;
   float: left;
-  margin: 0;
-  padding: 3px 0 0 19px;
+  margin: 0 3px 0 0;
+  padding: 1px 0 2px 12px;
   font-family: "Œ¢»Ì—≈∫⁄";
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #e2fff3;
   text-decoration: underline;
   background-image: url(images/blog.jpg);
   background-repeat: no-repeat;
   background-position: left;
+  background-position: 7px;
 }
 
 .headertxt {
@@ -377,8 +419,9 @@ h1, h2, h3, h4, h5, h6, span {
 #searchblank {
   width: 170px;
   float: left;
-  margin: -150px 0 0 0;
+  margin: 1130px 0 0 0;
   padding: 19px 0 0 140px;
+  position: absolute;
 }
 
 #searchinput {
@@ -469,8 +512,9 @@ h1, h2, h3, h4, h5, h6, span {
   width: 707px;
   height: 233px;
   float: left;
-  margin: -230px 0 0 -90px;
+  margin: 530px 0 0 -90px;
   padding: 63px 0 0 69px;
+  position: absolute;
 }
 
 #bannerheading {
@@ -567,7 +611,7 @@ h1, h2, h3, h4, h5, h6, span {
 #contentbg {
   width: 100%;
   float: left;
-  margin: 100px 0 0 0;
+  margin: 300px 0 0 0;
   padding: 0;
   background-image: url(images/contentbg.jpg);
   background-repeat: repeat-x;
@@ -771,6 +815,7 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 #awardheading {
+  border-radius: 10px;
   width: 158px;
   height: 57px;
   float: left;
@@ -784,12 +829,13 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 #awardheading:hover {
+  border-radius: 10px;
   width: 158px;
   height: 57px;
   float: left;
   margin: 0;
   padding: 4px 0 10px 46px;
-  opacity:0.5 ;
+  opacity:0.8 ;
 }
 
 #awardheading h3 {
@@ -908,10 +954,10 @@ h1, h2, h3, h4, h5, h6, span {
 .awardboldtxt {
   width: 174px;
   float: left;
-  margin: 0;
+  margin: -8px 0 0 0;
   padding: 0;
   font-family: Arial;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   color: #c24b1c;
 }
@@ -922,17 +968,74 @@ h1, h2, h3, h4, h5, h6, span {
   margin: 10px 0 0 0;
   padding: 0;
   font-family: Arial;
-  font-size: 10px;
+  font-size: 12px;
   color: #2f6d54;
 }
 
+.awardnormaltxt1 {
+  width: 370px;
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 12px;
+  color: #2f6d54;
+}
+
+.awardnormaltxt2 {
+  width: 370px;
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 12px;
+  color: #2f6d54;
+}
 /*----------------------------------------------AWARDPART--------------------------------------------------------------------------------------------------------END--*/
+#biu2{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-image:radial-gradient(circle at center,#b3d4fc,#ff7627) ;
+  margin: 530px 0 0 370px;
+  position: absolute;
+  cursor: pointer;
+  border:0;
+  outline:none;
+  z-index: 1;
+}
+
+#biu2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.5s;
+}
+
+#biu2:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  /*…Ë÷√≥ı º◊¥Ã¨*/
+  transition: 0s;
+}
+
 #projectblank {
   width: 365px;
   height: 352px;
   float: left;
-  margin: 0 0 0 60px;
+  margin: 550px 0 0 250px;
   padding: 28px 0 0 0;
+  position: absolute;
 }
 
 #project {
@@ -1209,10 +1312,11 @@ h1, h2, h3, h4, h5, h6, span {
   width: 294px;
   height: 26px;
   float: left;
-  margin: 17px 0 0 70px;
-  padding: 0;
+  margin: 45px 0 0 8px;
+  padding: 0 50px 0 0;
   background-image: url(images/paging.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 
 #paging ul {
@@ -1379,10 +1483,10 @@ h1, h2, h3, h4, h5, h6, span {
 #footerlinks {
   width: 1004px;
   float: left;
-  margin: 20px 20px 0 0;
+  margin: 15px 15px 0 0;
   padding: 0;
   font-family: Arial;
-  font-size: 11px;
+  font-size: 9px;
   color: #c8c8c8;
   text-align: center;
 }
@@ -1411,7 +1515,7 @@ h1, h2, h3, h4, h5, h6, span {
   margin: 10px 0 0 0;
   padding: 0;
   font-family: Arial;
-  font-size: 11px;
+  font-size: 13px;
   color: #ade6a7;
   text-align: center;
 }
@@ -1419,7 +1523,7 @@ h1, h2, h3, h4, h5, h6, span {
 #copyrightss {
   width: 1004px;
   float: left;
-  margin: 10px 0 0 0;
+  margin: 6px 0 0 0;
   padding: 0;
   font-family: Arial;
   font-size: 20px;
@@ -1516,4 +1620,16 @@ h1, h2, h3, h4, h5, h6, span {
   font-weight: bold;
   color: #FFF;
   text-decoration: underline;
+}
+
+#true_szyl{
+  text-align: center;
+}
+#tthen{
+  font-size: 25px;
+  color:#ff7627;
+}
+#init{
+  display: inline;
+  color: #ffb6c3;
 }

@@ -7,9 +7,9 @@
   <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div id="after"></div>
 <div id="headerbg">
   <div id="first"></div>
-  <div id="after"></div>
   <div id="headerblank">
     <div id="header">
       <div id="menublank">
@@ -26,90 +26,53 @@
           </ul>
           <button id="biu">消失 出现</button>
           <script>
-            $(document).ready(function () {
-              $("#biu").click(function () {
-                $("#demo").toggle("slow", function () {
-                })
+              $(document).ready(function () {
+                  $("#biu").click(function () {
+                      $("#demo").toggle("slow", function () {
+                      })
+                  })
               })
-            })
           </script>
           <div id="demo">
             <script>
-              let myVar = setInterval(function () {
-                myTimer()
-              }, 1000);
+                let myVar = setInterval(function () {
+                    myTimer()
+                }, 1000);
 
-              function myTimer() {
-                let nowTime = new Date();
-                let strNowTime = nowTime.toString();
-                let result = strNowTime.substring(15, strNowTime.length - 18);
-                let month = nowTime.getMonth();
-                let day = nowTime.getDay();
-                let strYear = nowTime.getFullYear();
-                let strDay, strMonth;
-                switch (day) {
-                  case 0:
-                    strDay = "星期天";
-                    break;
-                  case 1:
-                    strDay = "星期一";
-                    break;
-                  case 2:
-                    strDay = "星期二";
-                    break;
-                  case 3:
-                    strDay = "星期三";
-                    break;
-                  case 4:
-                    strDay = "星期四";
-                    break;
-                  case 5:
-                    strDay = "星期五";
-                    break;
-                  case 6:
-                    strDay = "星期六";
-                }
+                function myTimer() {
+                    let nowTime = new Date();
+                    let strNowTime = nowTime.toString();
+                    let result = strNowTime.substring(15, strNowTime.length - 18);
+                    let month = nowTime.getMonth() + 1;
+                    let day = nowTime.getDay();
+                    let strYear = nowTime.getFullYear();
+                    let strDate = nowTime.getDate();
+                    let strDay, strMonth;
+                    switch (day) {
+                        case 0:
+                            strDay = "星期天";
+                            break;
+                        case 1:
+                            strDay = "星期一";
+                            break;
+                        case 2:
+                            strDay = "星期二";
+                            break;
+                        case 3:
+                            strDay = "星期三";
+                            break;
+                        case 4:
+                            strDay = "星期四";
+                            break;
+                        case 5:
+                            strDay = "星期五";
+                            break;
+                        case 6:
+                            strDay = "星期六";
+                    }
 
-                switch (month) {
-                  case 0:
-                    strMonth = "一月";
-                    break;
-                  case 1:
-                    strMonth = "二月";
-                    break;
-                  case 2:
-                    strMonth = "三月";
-                    break;
-                  case 3:
-                    strMonth = "四月";
-                    break;
-                  case 4:
-                    strMonth = "五月";
-                    break;
-                  case 5:
-                    strMonth = "六月";
-                    break;
-                  case 6:
-                    strMonth = "七月";
-                    break;
-                  case 7:
-                    strMonth = "八月";
-                    break;
-                  case 8:
-                    strMonth = "九月";
-                    break;
-                  case 9:
-                    strMonth = "十月";
-                    break;
-                  case 10:
-                    strMonth = "十一月";
-                    break;
-                  case 11:
-                    strMonth = "十二月";
-                    break;
+                    document.getElementById("demo").innerHTML = "今天是 " + strYear + "年" + month + "月" + strDate + "日 " + strDay + result;
                 }
-                document.getElementById("demo").innerHTML = "今天是 " + strYear + "年 " + strMonth + " " + strDay + result;
-              }
             </script>
           </div>
         </div>
@@ -123,10 +86,19 @@
             <li><a href="#" class="blog">留言</a></li>
           </ul>
         </div>
-        <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
-        <div class="headertxt02"><span class="headerboldtxt"></span><span
-          class="headerdecoratxt">苏州园林，美不胜收！</span></div>
+        <button id="biu2">消失 出现</button>
+        <script>
+            $(document).ready(function () {
+                $("#biu2").click(function () {
+                    $("#projectblank").slideToggle("slow", function () {
+                    })
+                })
+            })
+        </script>
         <div id="projectblank">
+          <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
+          <div class="headertxt02"><span class="headerboldtxt"></span><span
+            class="headerdecoratxt">苏州园林，美不胜收！</span></div>
           <div id="project">
             <div id="projectgallery">
               <div id="project-pic"><a href="#" class="project-pic"></a></div>
@@ -139,30 +111,42 @@
               <div id="project-pic08"><a href="#" class="project-pic08"></a></div>
               <div id="project-pic09"><a href="#" class="project-pic09"></a></div>
             </div>
+
+
+            <div id="imgFrame">
+              <div id="imgbox"></div>
+            </div>
+            <script>
+                function showOriginal(img) {
+                    document.getElementById("imgFrame").style.display = "block";
+                    document.getElementById("imgbox").innerHTML = "<img src='" + img.getAttribute("original") + "' />";
+                }
+            </script>
+
+            <div id="paging">
+              <ul>
+                <li><a href="#" class="prev">风景前瞻</a></li>
+                <li><a href="#" class="num">1</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">2</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">3</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">4</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">5</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">6</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">7</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">8</a></li>
+                <li class="sap"></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="next">next</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="paging">
-          <ul>
-            <li><a href="#" class="prev">风景前瞻</a></li>
-            <li><a href="#" class="num">1</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">2</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">3</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">4</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">5</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">6</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">7</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">8</a></li>
-            <li class="sap"></li>
-            <li><a href="#" class="num">9</a></li>
-            <li><a href="#" class="next">next</a></li>
-          </ul>
         </div>
         <div id="special"></div>
         <div id="searchblank">
@@ -199,16 +183,16 @@
           <h3>景点新闻</h3>
         </div>
         <div id="newstxtbg">
-          <div id="newsboldtxt">2015年 5月</div>
+          <div id="newsboldtxt">2014年 2月</div>
           <div class="newstxt">休闲一日套票268元/位。大于等三人，或者费用高于550，人数不少于两人的团队，能获得精美礼物，每人一份，并且票价九折。<br/>
             <br/>
           </div>
           <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
-          <div id="newsboldtxt02">2015年 4月</div>
+          <div id="newsboldtxt02">2014年 8月</div>
           <div class="newstxt"><span class="boldtxt">清明假期开始，为期三天，指定景点门票限时半价，同时现场将有免费观光车带您游览景区。</span><br/>
           </div>
           <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
-          <div id="newsboldtxt03">2014年 10月</div>
+          <div id="newsboldtxt03">2015年 8月</div>
           <div class="newstxt"><span class="boldtxt">2014年9月指定时间段、指定地点，将有导游免费带队参观讲解。</span><br/>
           </div>
           <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
@@ -228,7 +212,7 @@
           </div>
           <div class="awardtxt02">
             <div class="awardboldtxt">拙政园</div>
-            <div class="awardnormaltxt">
+            <div class="awardnormaltxt1">
               拙政园的布局疏密自然，其特点是以水为主，水面广阔，景色平淡天真、疏朗自然。它以池水为中心，楼阁轩榭建在池的周围，其间有漏窗、回廊相连，园内的山石、古木、绿竹、花卉，构成了一幅幽远宁静的画面，代表了明代园林建筑风格。拙政园形成的湖、池、涧等不同的景区，把风景诗、山水画的意境和自然环境的实境再现于园中，富有诗情画意。
             </div>
           </div>
@@ -240,7 +224,7 @@
           </div>
           <div class="awardtxt04">
             <div class="awardboldtxt">狮子林</div>
-            <div class="awardnormaltxt">
+            <div class="awardnormaltxt2">
               狮子林内的湖石假山多且精美，建筑分布错落有致，园中最高峰为“狮子峰”，另有“含晖”、“吐月”等名峰。园内多竹，竹间结茅的方丈禅窝，建有“冰壶进”、“玉鉴池”、“小飞虹（桥）”。狮子林主题明确，景深丰富，个性分明，假山洞壑奇巧、出神入化、匠心独具，一草一木别有风韵，园内长廊四面贯通，廊壁上嵌有书条石刻，皆为名家书法佳作。
             </div>
           </div>
@@ -263,6 +247,9 @@
       </div>
       <div id="copyrights">@Copyright 苏州园林 All Rights Reserved.</div>
       <div id="copyrightss">此页面“景点新闻”及上方“copyright”内容为纯虚构，并且所有部分仅作学习用途。</div>
+      <div id="true_szyl"><a id="tthen" href="https://www.szylly.com/" target="_blank">点我跳转至 苏州园林
+        <div id="init">官方</div>
+        旅游网站</a></div>
     </div>
   </div>
 </div>

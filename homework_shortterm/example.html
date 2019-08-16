@@ -47,7 +47,7 @@
                     let day = nowTime.getDay();
                     let strYear = nowTime.getFullYear();
                     let strDate = nowTime.getDate();
-                    let strDay, strMonth;
+                    let strDay;
                     switch (day) {
                         case 0:
                             strDay = "星期天";
@@ -97,51 +97,246 @@
         </script>
         <div id="projectblank">
           <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
-          <div class="headertxt02"><span class="headerboldtxt"></span><span
+          <div class="headertxt02"><span class="headerboldtxt"> </span><span
             class="headerdecoratxt">苏州园林，美不胜收！</span></div>
           <div id="project">
             <div id="projectgallery">
-              <div id="project-pic"><a href="#" class="project-pic"></a></div>
-              <div id="project-pic02"><a href="#" class="project-pic02"></a></div>
-              <div id="project-pic03"><a href="#" class="project-pic03"></a></div>
-              <div id="project-pic04"><a href="#" class="project-pic04"></a></div>
-              <div id="project-pic05"><a href="#" class="project-pic05"></a></div>
-              <div id="project-pic06"><a href="#" class="project-pic06"></a></div>
-              <div id="project-pic07"><a href="#" class="project-pic07"></a></div>
-              <div id="project-pic08"><a href="#" class="project-pic08"></a></div>
-              <div id="project-pic09"><a href="#" class="project-pic09"></a></div>
+              <img src="images/pitcure02.jpg" id="real_1" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_2" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_3" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_4" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_5" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_6" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_7" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_8" alt="苏州园林">
+              <img src="images/pitcure02.jpg" id="real_9" alt="苏州园林">
             </div>
 
 
-            <div id="imgFrame">
-              <div id="imgbox"></div>
+
+
+            <!--111-->
+            <div class="motai_1" id="mo_1">
+              <span class="close_1" id="close_1">×</span>
+              <img class="motaiimg_1" id="moimg_1">
+              <div id="caption_1"></div>
             </div>
             <script>
-                function showOriginal(img) {
-                    document.getElementById("imgFrame").style.display = "block";
-                    document.getElementById("imgbox").innerHTML = "<img src='" + img.getAttribute("original") + "' />";
+                let motai = document.getElementById('mo_1');
+                let moimg = document.getElementById("moimg_1");
+                let realimg = document.getElementById("real_1");
+                let caption = document.getElementById("caption_1");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_1");
+                span.onclick = function() {
+                    motai.style.display = "none";
                 }
             </script>
+
+            <!--222-->
+            <div class="motai_2" id="mo_2">
+              <span class="close_2" id="close_2">×</span>
+              <img class="motaiimg_2" id="moimg_2">
+              <div id="caption_2"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_2');
+                let moimg = document.getElementById("moimg_2");
+                let realimg = document.getElementById("real_2");
+                let caption = document.getElementById("caption_2");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_2");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--333-->
+            <div class="motai_3" id="mo_3">
+              <span class="close_3" id="close_3">×</span>
+              <img class="motaiimg_3" id="moimg_3">
+              <div id="caption_3"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_3');
+                let moimg = document.getElementById("moimg_3");
+                let realimg = document.getElementById("real_3");
+                let caption = document.getElementById("caption_3");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_3");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--444-->
+            <div class="motai_4" id="mo_4">
+              <span class="close" id="close_4">×</span>
+              <img class="motaiimg" id="moimg_4">
+              <div id="caption_4"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_4');
+                let moimg = document.getElementById("moimg_4");
+                let realimg = document.getElementById("real_4");
+                let caption = document.getElementById("caption_4");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_4");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--555-->
+            <div class="motai_5" id="mo_5">
+              <span class="close_5" id="close_5">×</span>
+              <img class="motaiimg_5" id="moimg_5">
+              <div id="caption_5"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_5');
+                let moimg = document.getElementById("moimg_5");
+                let realimg = document.getElementById("real_5");
+                let caption = document.getElementById("caption_5");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_5");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--666-->
+            <div class="motai_6" id="mo_6">
+              <span class="close_6" id="close_6">×</span>
+              <img class="motaiimg_6" id="moimg_6">
+              <div id="caption_6"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_6');
+                let moimg = document.getElementById("moimg_6");
+                let realimg = document.getElementById("real_6");
+                let caption = document.getElementById("caption_6");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_6");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--777-->
+            <div class="motai_7" id="mo_7">
+              <span class="close" id="close_7">×</span>
+              <img class="motaiimg" id="moimg_7">
+              <div id="caption_7"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_7');
+                let moimg = document.getElementById("moimg_7");
+                let realimg = document.getElementById("real_7");
+                let caption = document.getElementById("caption_7");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_7");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--888-->
+            <div class="motai_8" id="mo_8">
+              <span class="close_8" id="close_8">×</span>
+              <img class="motaiimg_8" id="moimg_8">
+              <div id="caption_8"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_8');
+                let moimg = document.getElementById("moimg_8");
+                let realimg = document.getElementById("real_8");
+                let caption = document.getElementById("caption_8");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_8");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+            <!--999-->
+            <div class="motai_9" id="mo_9">
+              <span class="close_9" id="close_9">×</span>
+              <img class="motaiimg_9" id="moimg_9">
+              <div id="caption_9"></div>
+            </div>
+            <script>
+                let motai = document.getElementById('mo_9');
+                let moimg = document.getElementById("moimg_9");
+                let realimg = document.getElementById("real_9");
+                let caption = document.getElementById("caption_9");
+                realimg.onclick = function() {
+                    motai.style.display = "block";
+                    moimg.src = this.src;
+                    caption.innerHTML = this.alt
+                };
+                let span = document.getElementById("close_9");
+                span.onclick = function() {
+                    motai.style.display = "none";
+                }
+            </script>
+
+
+
+
+
 
             <div id="paging">
               <ul>
                 <li><a href="#" class="prev">风景前瞻</a></li>
                 <li><a href="#" class="num">1</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">2</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">3</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">4</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">5</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">6</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">7</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">8</a></li>
-                <li class="sap"></li>
+                <li class="sap"> </li>
                 <li><a href="#" class="num">9</a></li>
                 <li><a href="#" class="next">next</a></li>
               </ul>
@@ -246,7 +441,7 @@
         <a href="#" class="footerlinks">联系我们</a>
       </div>
       <div id="copyrights">@Copyright 苏州园林 All Rights Reserved.</div>
-      <div id="copyrightss">此页面“景点新闻”及上方“copyright”内容为纯虚构，并且所有部分仅作学习用途。</div>
+      <div id="copyrightss">此页面“景点新闻”及上方“copyright”内容为纯虚构，并且所有部分仅作个人学习用途。</div>
       <div id="true_szyl"><a id="tthen" href="https://www.szylly.com/" target="_blank">点我跳转至 苏州园林
         <div id="init">官方</div>
         旅游网站</a></div>

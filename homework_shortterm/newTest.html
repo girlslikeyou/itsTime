@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -25,8 +25,8 @@
       position: fixed;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.7);
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       z-index: 1;
     }
 
@@ -87,7 +87,7 @@
 <body>
 <!--<h2>图片点击弹出模态框效果</h2>
 <p>图片模态框很不错，是个值得学习的效果</p>-->
-<img src="images\pitcure02.jpg" id="real" alt="苏州园林">
+<img src="images\picture02.jpg" id="real" alt="苏州园林25252">
 <!--图片模态框 -->
 <div class="motai" id="mo">
   <span class="close" id="close">×</span>
@@ -95,15 +95,15 @@
   <div id="caption"></div>
 </div>
 <script>
-    var motai = document.getElementById('mo')
-    var moimg = document.getElementById("moimg")
-    var realimg = document.getElementById("real")
-    var caption = document.getElementById("caption")
+    var motai = document.getElementById('mo');
+    var moimg = document.getElementById("moimg");
+    var realimg = document.getElementById("real");
+    var caption = document.getElementById("caption");
     realimg.onclick = function() {
-        motai.style.display = "block"
-        moimg.src = this.src
+        motai.style.display = "block";
+        moimg.src = this.src;
         caption.innerHTML = this.alt
-    }
+    };
     var span = document.getElementById("close");
     span.onclick = function() {
         motai.style.display = "none";

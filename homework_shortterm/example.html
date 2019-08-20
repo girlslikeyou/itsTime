@@ -86,257 +86,7 @@
             <li><a href="#" class="blog">留言</a></li>
           </ul>
         </div>
-        <button id="biu2">消失 出现</button>
-        <script>
-            $(document).ready(function () {
-                $("#biu2").click(function () {
-                    $("#projectblank").slideToggle("slow", function () {
-                    })
-                })
-            })
-        </script>
-        <div id="projectblank">
-          <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
-          <div class="headertxt02"><span class="headerboldtxt"> </span><span
-            class="headerdecoratxt">苏州园林，美不胜收！<br>（下方缩略图可点击放大）</span></div>
-          <div id="project">
-            <div id="projectgallery">
-              <img src="images/picture01.jpeg" id="real_1" alt="苏州园林111">
-              <img src="images/picture02.jpg" id="real_2" alt="苏州园林222">
-              <img src="images/picture03.jpg" id="real_3" alt="苏州园林333">
-              <img src="images/picture04.jpg" id="real_4" alt="苏州园林444">
-              <img src="images/picture05.jpg" id="real_5" alt="苏州园林555">
-              <img src="images/picture06.jpg" id="real_6" alt="苏州园林666">
-              <img src="images/picture07.jpg" id="real_7" alt="苏州园林777">
-              <img src="images/picture08.jpg" id="real_8" alt="苏州园林888">
-              <img src="images/picture02.jpg" id="real_9" alt="苏州园林999">
-            </div>
 
-
-            <!--111-->
-            <div class="motai_1" id="mo_1">
-              <span class="close_1" id="close_1">×</span>
-              <img class="motaiimg_1" id="moimg_1">
-              <div id="caption_1"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_1');
-                var moimg = document.getElementById("moimg_1");
-                var realimg = document.getElementById("real_1");
-                var caption = document.getElementById("caption_1");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_1");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--222-->
-            <div class="motai_2" id="mo_2">
-              <span class="close_2" id="close_2">×</span>
-              <img class="motaiimg_2" id="moimg_2">
-              <div id="caption_2"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_2');
-                var moimg = document.getElementById("moimg_2");
-                var realimg = document.getElementById("real_2");
-                var caption = document.getElementById("caption_2");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_2");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--333-->
-            <div class="motai_3" id="mo_3">
-              <span class="close_3" id="close_3">×</span>
-              <img class="motaiimg_3" id="moimg_3">
-              <div id="caption_3"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_3');
-                var moimg = document.getElementById("moimg_3");
-                var realimg = document.getElementById("real_3");
-                var caption = document.getElementById("caption_3");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_3");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--444-->
-            <div class="motai_4" id="mo_4">
-              <span class="close" id="close_4">×</span>
-              <img class="motaiimg" id="moimg_4">
-              <div id="caption_4"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_4');
-                var moimg = document.getElementById("moimg_4");
-                var realimg = document.getElementById("real_4");
-                var caption = document.getElementById("caption_4");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_4");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--555-->
-            <div class="motai_5" id="mo_5">
-              <span class="close_5" id="close_5">×</span>
-              <img class="motaiimg_5" id="moimg_5">
-              <div id="caption_5"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_5');
-                var moimg = document.getElementById("moimg_5");
-                var realimg = document.getElementById("real_5");
-                var caption = document.getElementById("caption_5");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_5");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--666-->
-            <div class="motai_6" id="mo_6">
-              <span class="close_6" id="close_6">×</span>
-              <img class="motaiimg_6" id="moimg_6">
-              <div id="caption_6"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_6');
-                var moimg = document.getElementById("moimg_6");
-                var realimg = document.getElementById("real_6");
-                var caption = document.getElementById("caption_6");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_6");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--777-->
-            <div class="motai_7" id="mo_7">
-              <span class="close" id="close_7">×</span>
-              <img class="motaiimg" id="moimg_7">
-              <div id="caption_7"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_7');
-                var moimg = document.getElementById("moimg_7");
-                var realimg = document.getElementById("real_7");
-                var caption = document.getElementById("caption_7");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_7");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--888-->
-            <div class="motai_8" id="mo_8">
-              <span class="close_8" id="close_8">×</span>
-              <img class="motaiimg_8" id="moimg_8">
-              <div id="caption_8"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_8');
-                var moimg = document.getElementById("moimg_8");
-                var realimg = document.getElementById("real_8");
-                var caption = document.getElementById("caption_8");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_8");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-            <!--999-->
-            <div class="motai_9" id="mo_9">
-              <span class="close_9" id="close_9">×</span>
-              <img class="motaiimg_9" id="moimg_9">
-              <div id="caption_9"></div>
-            </div>
-            <script>
-                var motai = document.getElementById('mo_9');
-                var moimg = document.getElementById("moimg_9");
-                var realimg = document.getElementById("real_9");
-                var caption = document.getElementById("caption_9");
-                realimg.onclick = function () {
-                    motai.style.display = "block";
-                    moimg.src = this.src;
-                    caption.innerHTML = this.alt
-                };
-                var span = document.getElementById("close_9");
-                span.onclick = function () {
-                    motai.style.display = "none";
-                }
-            </script>
-
-
-            <div id="paging">
-              <ul>
-                <li><a href="#" class="prev">风景前瞻</a></li>
-                <li><a href="#" class="num">1</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">2</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">3</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">4</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">5</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">6</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">7</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">8</a></li>
-                <li class="sap"> </li>
-                <li><a href="#" class="num">9</a></li>
-                <li><a href="#" class="next">next</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <div id="special"></div>
         <div id="searchblank">
           <div id="searchinput">
@@ -349,12 +99,19 @@
           <div id="go"><a href="#" class="go">Go</a></div>
         </div>
       </div>
+
+
+      <div id="lastt">
+        <div class="lastt"></div>
+      </div>
+
+
       <div id="bannertxtblank">
         <div id="bannerheading">
           <h2>欢迎到苏州园林度假旅游</h2>
         </div>
         <div id="bannertxt">
-          <p>苏州园林是建筑、山水、花木、雕刻、书画的综合艺术品，集自然美和艺术美于一体，构成了曲折迂回、步移景换的画面。</p>
+          <p><br><br>苏州园林是建筑、山水、花木、雕刻、书画的综合艺术品，集自然美和艺术美于一体，构成了曲折迂回、步移景换的画面。</p>
           <p><span
             class="bannertxt">苏州园林里的门和窗，图案设计和雕镂琢磨功夫都是工艺美术的上品。大致说来，那些门和窗尽量工细而决不庸俗，即使简朴而别具匠心。四扇，八扇，十二扇，综合起来看，谁都要赞叹这是高度的图案美。</span>
           </p>
@@ -364,6 +121,387 @@
     </div>
   </div>
 </div>
+
+
+<div id="projectblank">
+  <button id="biu2">消失 出现</button>
+  <script>
+      $(document).ready(function () {
+          $("#biu2").click(function () {
+              $("#project").slideToggle("slow", function () {
+              })
+          })
+      })
+  </script>
+  <div id="project">
+    <div class="headertxt"><span class="headerdecoratxt">欢迎大家来到美丽的苏州！</span></div>
+    <div class="headertxt02"><span class="headerboldtxt"> </span><span
+      class="headerdecoratxt">苏州园林，美不胜收！<br>（下方缩略图可点击放大）</span></div>
+    <div id="projectgallery">
+      <img src="images/picture01.jpeg" id="real_1" alt="苏州园林111">
+      <img src="images/picture02.jpg" id="real_2" alt="苏州园林222">
+      <img src="images/picture03.jpg" id="real_3" alt="苏州园林333">
+      <img src="images/picture04.jpg" id="real_4" alt="苏州园林444">
+      <img src="images/picture05.jpg" id="real_5" alt="苏州园林555">
+      <img src="images/picture06.jpg" id="real_6" alt="苏州园林666">
+      <img src="images/picture07.jpg" id="real_7" alt="苏州园林777">
+      <img src="images/picture08.jpg" id="real_8" alt="苏州园林888">
+      <img src="images/picture02.jpg" id="real_9" alt="苏州园林999">
+    </div>
+
+
+    <!--111-->
+    <div class="motai_1" id="mo_1">
+      <span class="close_1" id="close_1">×</span>
+      <img class="motaiimg_1" id="moimg_1">
+      <div id="caption_1"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_1');
+        var moimg = document.getElementById("moimg_1");
+        var realimg = document.getElementById("real_1");
+        var caption = document.getElementById("caption_1");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_1");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--222-->
+    <div class="motai_2" id="mo_2">
+      <span class="close_2" id="close_2">×</span>
+      <img class="motaiimg_2" id="moimg_2">
+      <div id="caption_2"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_2');
+        var moimg = document.getElementById("moimg_2");
+        var realimg = document.getElementById("real_2");
+        var caption = document.getElementById("caption_2");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_2");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--333-->
+    <div class="motai_3" id="mo_3">
+      <span class="close_3" id="close_3">×</span>
+      <img class="motaiimg_3" id="moimg_3">
+      <div id="caption_3"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_3');
+        var moimg = document.getElementById("moimg_3");
+        var realimg = document.getElementById("real_3");
+        var caption = document.getElementById("caption_3");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_3");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--444-->
+    <div class="motai_4" id="mo_4">
+      <span class="close" id="close_4">×</span>
+      <img class="motaiimg" id="moimg_4">
+      <div id="caption_4"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_4');
+        var moimg = document.getElementById("moimg_4");
+        var realimg = document.getElementById("real_4");
+        var caption = document.getElementById("caption_4");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_4");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--555-->
+    <div class="motai_5" id="mo_5">
+      <span class="close_5" id="close_5">×</span>
+      <img class="motaiimg_5" id="moimg_5">
+      <div id="caption_5"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_5');
+        var moimg = document.getElementById("moimg_5");
+        var realimg = document.getElementById("real_5");
+        var caption = document.getElementById("caption_5");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_5");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--666-->
+    <div class="motai_6" id="mo_6">
+      <span class="close_6" id="close_6">×</span>
+      <img class="motaiimg_6" id="moimg_6">
+      <div id="caption_6"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_6');
+        var moimg = document.getElementById("moimg_6");
+        var realimg = document.getElementById("real_6");
+        var caption = document.getElementById("caption_6");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_6");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--777-->
+    <div class="motai_7" id="mo_7">
+      <span class="close" id="close_7">×</span>
+      <img class="motaiimg" id="moimg_7">
+      <div id="caption_7"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_7');
+        var moimg = document.getElementById("moimg_7");
+        var realimg = document.getElementById("real_7");
+        var caption = document.getElementById("caption_7");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_7");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--888-->
+    <div class="motai_8" id="mo_8">
+      <span class="close_8" id="close_8">×</span>
+      <img class="motaiimg_8" id="moimg_8">
+      <div id="caption_8"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_8');
+        var moimg = document.getElementById("moimg_8");
+        var realimg = document.getElementById("real_8");
+        var caption = document.getElementById("caption_8");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_8");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <!--999-->
+    <div class="motai_9" id="mo_9">
+      <span class="close_9" id="close_9">×</span>
+      <img class="motaiimg_9" id="moimg_9">
+      <div id="caption_9"></div>
+    </div>
+    <script>
+        var motai = document.getElementById('mo_9');
+        var moimg = document.getElementById("moimg_9");
+        var realimg = document.getElementById("real_9");
+        var caption = document.getElementById("caption_9");
+        realimg.onclick = function () {
+            motai.style.display = "block";
+            moimg.src = this.src;
+            caption.innerHTML = this.alt
+        };
+        var span = document.getElementById("close_9");
+        span.onclick = function () {
+            motai.style.display = "none";
+        }
+    </script>
+
+    <div id="paging">
+      <ul>
+        <li><a href="#" class="prev">风景前瞻</a></li>
+        <li><a href="#" class="num">1</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">2</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">3</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">4</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">5</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">6</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">7</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">8</a></li>
+        <li class="sap"> </li>
+        <li><a href="#" class="num">9</a></li>
+        <li><a href="#" class="next">next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id="contentmid">
+  <div id="awardheading">
+    <h3>景点介绍<br/>
+    </h3>
+  </div>
+  <div id="awardtxtblank">
+    <div class="awardtxt">
+      <div class="awardboldtxt"><div id="real_clt" >沧浪亭</div></div>
+      <div class="awardnormaltxt">
+        沧浪亭主要景区以山林为核心，四周环列建筑，亭及依山起伏的长廊又利用园外的水画，通过复廊上的漏窗渗透作用，沟通园内、外的山、水，使水面、池岸、假山、亭榭融成一体。园中山上石径盘旋，古树葱茏，箬竹被覆，藤萝蔓挂，野卉丛生，朴素自然，景色苍润如真山野林。
+      </div>
+    </div>
+    <div class="awardtxt02">
+      <div class="awardboldtxt"><div id="real_zzy">拙政园</div></div>
+      <div class="awardnormaltxt1">
+        拙政园的布局疏密自然，其特点是以水为主，水面广阔，景色平淡天真、疏朗自然。它以池水为中心，楼阁轩榭建在池的周围，其间有漏窗、回廊相连，园内的山石、古木、绿竹、花卉，构成了一幅幽远宁静的画面，代表了明代园林建筑风格。拙政园形成的湖、池、涧等不同的景区，把风景诗、山水画的意境和自然环境的实境再现于园中，富有诗情画意。
+      </div>
+    </div>
+
+    <div id="explain">点击橘色方框内的景点名称即可弹出大图进行观看哦！</div>
+
+    <div class="awardtxt03">
+      <div class="awardboldtxt"><div id="real_wsy">网师园</div></div>
+      <div class="awardnormaltxt">
+        网师园布局精巧，结构紧凑，以建筑精巧和空间尺度比例协调而著称。园分三部分，境界各异。东部为住宅，中部为主园。集中了春、夏、秋、冬四季景物及朝、午、夕、晚一日中的景色变化。所以游园时，宜坐、宜留、以静观为主。绕池一周，可前细数游鱼，可亭中待月迎风。
+      </div>
+    </div>
+    <div class="awardtxt04">
+      <div class="awardboldtxt"><div id="real_szl">狮子林</div></div>
+      <div class="awardnormaltxt2">
+        狮子林内的湖石假山多且精美，建筑分布错落有致，园中最高峰为“狮子峰”，另有“含晖”、“吐月”等名峰。园内多竹，竹间结茅的方丈禅窝，建有“冰壶进”、“玉鉴池”、“小飞虹（桥）”。狮子林主题明确，景深丰富，个性分明，假山洞壑奇巧、出神入化、匠心独具，一草一木别有风韵，园内长廊四面贯通，廊壁上嵌有书条石刻，皆为名家书法佳作。
+      </div>
+    </div>
+
+
+
+    <!--图片模态框 -->
+    <div class="motai_clt" id="mo_clt">
+      <span class="close_clt" id="close_clt">×</span>
+      <img class="motaiimg_clt" id="moimg_clt">
+      <div id="caption_clt"></div>
+    </div>
+    <script>
+        var motai_clt = document.getElementById('mo_clt');
+        var moimg_clt = document.getElementById("moimg_clt");
+        var realimg_clt = document.getElementById("real_clt");
+        var caption_clt = document.getElementById("caption_clt");
+        realimg_clt.onclick = function() {
+            motai_clt.style.display = "block";
+            moimg_clt.src = "images/clt.jpg";
+            caption_clt.innerHTML = "沧浪亭主要景区以山林为核心，四周环列建筑，亭及依山起伏的长廊又利用园外的水画，通过复廊上的漏窗渗透作用，沟通园内、外的山、水，使水面、池岸、假山、亭榭融成一体。园中山上石径盘旋，古树葱茏，箬竹被覆，藤萝蔓挂，野卉丛生，朴素自然，景色苍润如真山野林。"
+        };
+        var span_clt = document.getElementById("close_clt");
+        span_clt.onclick = function() {
+            motai_clt.style.display = "none";
+        }
+    </script>
+
+    <div class="motai_zzy" id="mo_zzy">
+      <span class="close_zzy" id="close_zzy">×</span>
+      <img class="motaiimg_zzy" id="moimg_zzy">
+      <div id="caption_zzy"></div>
+    </div>
+    <script>
+        var motai_zzy = document.getElementById('mo_zzy');
+        var moimg_zzy = document.getElementById("moimg_zzy");
+        var realimg_zzy = document.getElementById("real_zzy");
+        var caption_zzy = document.getElementById("caption_zzy");
+            realimg_zzy.onclick = function() {
+            motai_zzy.style.display = "block";
+            moimg_zzy.src = "images/zzy.jpg";
+            caption_zzy.innerHTML = "拙政园的布局疏密自然，其特点是以水为主，水面广阔，景色平淡天真、疏朗自然。它以池水为中心，楼阁轩榭建在池的周围，其间有漏窗、回廊相连，园内的山石、古木、绿竹、花卉，构成了一幅幽远宁静的画面，代表了明代园林建筑风格。拙政园形成的湖、池、涧等不同的景区，把风景诗、山水画的意境和自然环境的实境再现于园中，富有诗情画意。"
+        };
+        var span_zzy = document.getElementById("close_zzy");
+        span_zzy.onclick = function() {
+            motai_zzy.style.display = "none";
+        }
+    </script>
+
+    <div class="motai_szl" id="mo_szl">
+      <span class="close_szl" id="close_szl">×</span>
+      <img class="motaiimg_szl" id="moimg_szl">
+      <div id="caption_szl"></div>
+    </div>
+    <script>
+        var motai_szl = document.getElementById('mo_szl');
+        var moimg_szl = document.getElementById("moimg_szl");
+        var realimg_szl = document.getElementById("real_szl");
+        var caption_szl = document.getElementById("caption_szl");
+        realimg_szl.onclick = function() {
+            motai_szl.style.display = "block";
+            moimg_szl.src = "images/szl.jpg";
+            caption_szl.innerHTML = "狮子林内的湖石假山多且精美，建筑分布错落有致，园中最高峰为“狮子峰”，另有“含晖”、“吐月”等名峰。园内多竹，竹间结茅的方丈禅窝，建有“冰壶进”、“玉鉴池”、“小飞虹（桥）”。狮子林主题明确，景深丰富，个性分明，假山洞壑奇巧、出神入化、匠心独具，一草一木别有风韵，园内长廊四面贯通，廊壁上嵌有书条石刻，皆为名家书法佳作。"
+        };
+        var span_szl = document.getElementById("close_szl");
+        span_szl.onclick = function() {
+            motai_szl.style.display = "none";
+        }
+    </script>
+
+    <div class="motai_wsy" id="mo_wsy">
+      <span class="close_wsy" id="close_wsy">×</span>
+      <img class="motaiimg_wsy" id="moimg_wsy">
+      <div id="caption_wsy"></div>
+    </div>
+    <script>
+        var motai_wsy = document.getElementById('mo_wsy');
+        var moimg_wsy = document.getElementById("moimg_wsy");
+        var realimg_wsy = document.getElementById("real_wsy");
+        var caption_wsy = document.getElementById("caption_wsy");
+        realimg_wsy.onclick = function() {
+            motai_wsy.style.display = "block";
+            moimg_wsy.src = "images/wsy.jpg";
+            caption_wsy.innerHTML = "网师园布局精巧，结构紧凑，以建筑精巧和空间尺度比例协调而著称。园分三部分，境界各异。东部为住宅，中部为主园。集中了春、夏、秋、冬四季景物及朝、午、夕、晚一日中的景色变化。所以游园时，宜坐、宜留、以静观为主。绕池一周，可前细数游鱼，可亭中待月迎风。"
+        };
+        var span_wsy = document.getElementById("close_wsy");
+        span_wsy.onclick = function() {
+            motai_wsy.style.display = "none";
+        }
+    </script>
+
+  </div>
+  <div class="morenewsbutton_s"><a href="#" class="morenews_s">more</a></div>
+</div>
+
+
+
 <div id="contentbg">
   <div id="contentblank">
     <div id="content">
@@ -387,39 +525,11 @@
           <div class="morenewsbutton"><a href="#" class="morenews">more</a></div>
         </div>
       </div>
-      <div id="contentmid">
-        <div id="awardheading">
-          <h3>景点介绍<br/>
-          </h3>
-        </div>
-        <div id="awardtxtblank">
-          <div class="awardtxt">
-            <div class="awardboldtxt">沧浪亭</div>
-            <div class="awardnormaltxt">
-              沧浪亭主要景区以山林为核心，四周环列建筑，亭及依山起伏的长廊又利用园外的水画，通过复廊上的漏窗渗透作用，沟通园内、外的山、水，使水面、池岸、假山、亭榭融成一体。园中山上石径盘旋，古树葱茏，箬竹被覆，藤萝蔓挂，野卉丛生，朴素自然，景色苍润如真山野林。
-            </div>
-          </div>
-          <div class="awardtxt02">
-            <div class="awardboldtxt">拙政园</div>
-            <div class="awardnormaltxt1">
-              拙政园的布局疏密自然，其特点是以水为主，水面广阔，景色平淡天真、疏朗自然。它以池水为中心，楼阁轩榭建在池的周围，其间有漏窗、回廊相连，园内的山石、古木、绿竹、花卉，构成了一幅幽远宁静的画面，代表了明代园林建筑风格。拙政园形成的湖、池、涧等不同的景区，把风景诗、山水画的意境和自然环境的实境再现于园中，富有诗情画意。
-            </div>
-          </div>
-          <div class="awardtxt03">
-            <div class="awardboldtxt">网师园</div>
-            <div class="awardnormaltxt">
-              网师园布局精巧，结构紧凑，以建筑精巧和空间尺度比例协调而著称。园分三部分，境界各异。东部为住宅，中部为主园。集中了春、夏、秋、冬四季景物及朝、午、夕、晚一日中的景色变化。所以游园时，宜坐、宜留、以静观为主。绕池一周，可前细数游鱼，可亭中待月迎风。
-            </div>
-          </div>
-          <div class="awardtxt04">
-            <div class="awardboldtxt">狮子林</div>
-            <div class="awardnormaltxt2">
-              狮子林内的湖石假山多且精美，建筑分布错落有致，园中最高峰为“狮子峰”，另有“含晖”、“吐月”等名峰。园内多竹，竹间结茅的方丈禅窝，建有“冰壶进”、“玉鉴池”、“小飞虹（桥）”。狮子林主题明确，景深丰富，个性分明，假山洞壑奇巧、出神入化、匠心独具，一草一木别有风韵，园内长廊四面贯通，廊壁上嵌有书条石刻，皆为名家书法佳作。
-            </div>
-          </div>
-        </div>
-        <div class="morenewsbutton_s"><a href="#" class="morenews_s">more</a></div>
-      </div>
+
+
+
+
+
     </div>
   </div>
 </div>

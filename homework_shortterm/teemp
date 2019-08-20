@@ -1,0 +1,270 @@
+<div>
+            <span class="close_zzy" id="close_zzy">×</span>
+            <div class="motaiimg_zzy" id="moimg_zzy"></div>
+            <div id="caption_zzy"></div>
+          </div>
+          <script>
+              var realimg = document.getElementById("real_zzy");
+              var caption = document.getElementById("caption_zzy");
+              realimg.onclick = function() {
+                  motai.style.display = "block";
+                  moimg.src = "images/2.jpg";
+              };
+              var span = document.getElementById("close_zzy");
+              span.onclick = function() {
+                  motai.style.display = "none";
+              }
+          </script>
+
+          <div>
+            <span class="close_szl" id="close_szl">×</span>
+            <div class="motaiimg_szl" id="moimg_szl"></div>
+            <div id="caption_szl"></div>
+          </div>
+          <script>
+              var realimg = document.getElementById("real_szl");
+              var caption = document.getElementById("caption_szl");
+              realimg.onclick = function() {
+                  motai.style.display = "block";
+                  moimg.src = "images/2.jpg";
+              };
+              var span = document.getElementById("close_szl");
+              span.onclick = function() {
+                  motai.style.display = "none";
+              }
+          </script>
+
+          <div>
+            <span class="close_wsy" id="close_wsy">×</span>
+            <div class="motaiimg_clt" id="moimg_wsy"></div>
+            <div id="caption_wsy"></div>
+          </div>
+          <script>
+              var realimg = document.getElementById("real_wsy");
+              var caption = document.getElementById("caption_wsy");
+              realimg.onclick = function() {
+                  motai.style.display = "block";
+                  moimg.src = "images/2.jpg";
+              };
+              var span = document.getElementById("close_wsy");
+              span.onclick = function() {
+                  motai.style.display = "none";
+              }
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          #mo_zzy {
+            display: none;
+            /*隐藏*/
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+
+          #moimg_zzy {
+            display: block;
+            margin: 25px auto;
+            width: 60%;
+            max-width: 750px;
+          }
+
+          #caption_zzy {
+            text-align: center;
+            margin: 15px auto;
+            width: 60%;
+            max-height: 750px;
+            font-size: 20px;
+            color: #ccc;
+          }
+
+          #moimg_zzy,
+          #caption_zzy {
+            animation: first 1s;
+          }
+
+          @keyframes first {
+            from {
+              transform: scale(0.1);
+            }
+
+            to {
+              transform: scale(1);
+            }
+          }
+
+          .close_zzy {
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 14%;
+            color: #f1f1f1;
+          }
+
+          .close_zzy:hover,
+          .close_zzy:focus {
+            color: #bbb;
+            cursor: pointer;
+          }
+
+          @media only screen and(max-width:750px) {
+            #moimg_zzy {
+              width: 100%;
+            }
+          }
+
+
+
+          #mo_szl {
+            display: none;
+            /*隐藏*/
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+
+          #moimg_szl {
+            display: block;
+            margin: 25px auto;
+            width: 60%;
+            max-width: 750px;
+          }
+
+          #caption_szl {
+            text-align: center;
+            margin: 15px auto;
+            width: 60%;
+            max-height: 750px;
+            font-size: 20px;
+            color: #ccc;
+          }
+
+          #moimg_szl,
+          #caption_szl {
+            animation: first 1s;
+          }
+
+          @keyframes first {
+            from {
+              transform: scale(0.1);
+            }
+
+            to {
+              transform: scale(1);
+            }
+          }
+
+          .close_szl {
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 14%;
+            color: #f1f1f1;
+          }
+
+          .close_szl:hover,
+          .close_szl:focus {
+            color: #bbb;
+            cursor: pointer;
+          }
+
+          @media only screen and(max-width:750px) {
+            #moimg_szl {
+              width: 100%;
+            }
+          }
+
+
+
+
+          #mo_wsy {
+            display: none;
+            /*隐藏*/
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+
+          #moimg_wsy {
+            display: block;
+            margin: 25px auto;
+            width: 60%;
+            max-width: 750px;
+          }
+
+          #caption_wsy {
+            text-align: center;
+            margin: 15px auto;
+            width: 60%;
+            max-height: 750px;
+            font-size: 20px;
+            color: #ccc;
+          }
+
+          #moimg_wsy,
+          #caption_wsy {
+            animation: first 1s;
+          }
+
+          @keyframes first {
+            from {
+              transform: scale(0.1);
+            }
+
+            to {
+              transform: scale(1);
+            }
+          }
+
+          .close_wsy {
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 14%;
+            color: #f1f1f1;
+          }
+
+          .close_wsy:hover,
+          .close_wsy:focus {
+            color: #bbb;
+            cursor: pointer;
+          }
+
+          @media only screen and(max-width:750px) {
+            #moimg_wsy {
+              width: 100%;
+            }
+          }
